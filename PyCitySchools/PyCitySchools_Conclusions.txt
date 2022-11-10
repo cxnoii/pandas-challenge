@@ -1,0 +1,47 @@
+1. When sorting the data by school types, we can observe that charter schools have a significantly higher average overall passing rate than disctrict schools:
+
+             Average Math Score  Average Reading Score  % Passing Math  % Passing Reading  % Overall Passing
+School Type                                                                                                 
+Charter                  83.474                 83.896          93.621             96.587             90.432
+District                 76.957                 80.967          66.549             80.799             53.672
+
+Also, all of the individual charter schools have higher overall passing rates than the district schools within this data set.
+
+
+2. Oddly enough, the more budget available for each student the lower the overall passing rate: 
+                               Average Math Score  Average Reading Score  % Passing Math  % Passing Reading  % Overall Passing
+Spending Ranges (Per Student)                                                                                                 
+<$585                                      83.455                 83.934          93.460             96.611             90.370
+$585-630                                   81.900                 83.156          87.134             92.718             81.418
+$630-645                                   78.519                 81.624          73.484             84.392             62.858
+$645-680                                   76.997                 81.028          66.165             81.134             53.527
+
+If we further investigate, we can see that the district schools typically have a larger amount of students, which explains why passing rates decrease as budget increases: 
+
+                      School Type  Student Count Total School Budget  Per Student Budget  % Overall Passing
+school_name                                                                                                
+Holden High School        Charter            427         $248,087.00               581.0             89.227
+Pena High School          Charter            962         $585,858.00               609.0             90.541
+Griffin High School       Charter           1468         $917,500.00               625.0             90.599
+Thomas High School        Charter           1635       $1,043,130.00               638.0             90.948
+Shelton High School       Charter           1761       $1,056,600.00               600.0             89.892
+Wright High School        Charter           1800       $1,049,400.00               583.0             90.333
+Cabrera High School       Charter           1858       $1,081,356.00               582.0             91.335
+Wilson High School        Charter           2283       $1,319,574.00               578.0             90.583
+Ford High School         District           2739       $1,763,916.00               644.0             54.290
+Huang High School        District           2917       $1,910,635.00               655.0             53.514
+Figueroa High School     District           2949       $1,884,411.00               639.0             53.204
+Rodriguez High School    District           3999       $2,547,363.00               637.0             52.988
+Hernandez High School    District           4635       $3,022,020.00               652.0             53.528
+Johnson High School      District           4761       $3,094,650.00               650.0             53.539
+Bailey High School       District           4976       $3,124,928.00               628.0             54.642
+
+ 3. When sorting the data by school size, we can observe that larger schools typically have a lower overall passing rate than small and medium sized schools
+Small and medium sized schools have similar overall passing rates, however the larger schools have a significantly lower passing rate:
+
+                    Average Math Score  Average Reading Score  % Passing Math  % Passing Reading  % Overall Passing
+School Size                                                                                                        
+Small (<1000)                   83.822                 83.930          93.550             96.100             89.884
+Medium (1000-2000)              83.374                 83.865          93.599             96.791             90.621
+Large (2000-5000)               77.746                 81.344          69.964             82.767             58.286
+ It might be worth noting that the larger schools consist of mostly district schools, as we can see from the previous table.
